@@ -1,0 +1,52 @@
+.slider {
+
+    //overflow-x: scroll;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    margin-top: 5em;
+   
+
+    .carousel {
+        display: flex;
+
+
+
+    }
+
+    .carouselItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 50%;
+        justify-content: center;
+        margin: 2em 0;
+        padding: 1em 2em;
+    
+
+
+        h3 {
+            margin-top: 1.5em;
+        }
+
+
+        p {
+            padding-top: 2.5em;
+            text-align: center;
+        }
+    }
+
+
+}
+
+@media screen and (max-width:768px) {
+
+    .slider {
+
+        overflow-x: scroll;
+
+        .carouselItem {
+            min-width: 100%;
+        }
+
+    }
+}

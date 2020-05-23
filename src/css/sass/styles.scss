@@ -1,0 +1,104 @@
+@import "header";
+@import "hero";
+@import "aboutSection";
+@import "slider";
+@import "simplify";
+@import "footer";
+
+:root {
+    --BrightRed: hsl(12, 88%, 59%);
+    --DarkBlue: hsl(228, 39%, 23%);
+    --DarkGrayishBlue: hsl(227, 12%, 61%);
+    --VeryDarkBlue: hsl(233, 12%, 13%);
+    --VeryPaleRed: hsl(13, 100%, 96%);
+    --VaryLightGray: hsl(0, 0%, 98%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Be Vietnam', sans-serif;
+
+}
+
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2em;
+
+}
+
+.button {
+    background-color: var(--BrightRed);
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    padding: 0.8em 2.25em;
+    color: #FFF;
+    font-family: 'Be Vietnam', sans-serif;
+    font-weight: 500;
+    box-shadow: 0 10px 20px -10px var(--BrightRed);
+
+    &:hover {
+        opacity: .8;
+        cursor: pointer;
+    }
+}
+
+.smallButton {
+    @extend .button;
+    box-shadow: none;
+    padding: 0.1em .8em;
+    margin-right: .8em;
+
+}
+
+.ligthParagraph {
+    color: var(--DarkGrayishBlue);
+    line-height: 1.6;
+}
+
+.blueCentered {
+    color: var(--DarkBlue);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+
+.sliderSectionTitle {
+    margin-top: 6em;
+}
+
+.centered {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.svgIcon:hover {
+    fill: "red";
+}
+
+
+@media screen and (max-width:768px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        padding-left: 0;
+    }
+
+    .smallButton {
+        margin-right: .3em;
+    }
+}

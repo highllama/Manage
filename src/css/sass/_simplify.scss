@@ -1,0 +1,42 @@
+.simplify {
+  margin-top: 15em;
+  display: flex;
+  background: url("../images/bg-simplify-section-desktop.svg") center right -180px;
+  background-size: contain;
+  background-color: var(--BrightRed);
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.8em 12em;
+
+  h1 {
+    color: #fff;
+    width: 70%;
+  }
+
+  button {
+    background-color: #fff;
+    color: var(--BrightRed);
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .simplify {
+    flex-direction: column;
+    background: url(../images/bg-simplify-section-mobile.svg) center left
+      no-repeat;
+    background-color: var(--BrightRed);
+    padding: 2.8em 1em;
+    align-content: center;
+    text-align: center;
+
+    h1 {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    button {
+      margin-top: 2em;
+    }
+  }
+}
